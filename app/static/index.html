@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Madad — Verified Medical Crowdfunding in Pakistan</title>
+  <meta name="description" content="Madad is a transparent, verified medical crowdfunding platform for Pakistan. Raise funds for surgeries, cancer treatment, thalassemia and dialysis — every rupee is traceable to a verified campaign." />
+  <meta property="og:title" content="Madad — Medical Crowdfunding, Verified" />
+  <meta property="og:description" content="Verified campaigns, public donation ledger. Every rupee traceable." />
+  <meta property="og:type" content="website" />
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='.9em' font-size='90'%3E🤲%3C/text%3E%3C/svg%3E" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Lexend:wght@500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="/css/styles.css" />
+</head>
+<body>
+  <div id="app">
+    <!-- header -->
+    <header class="topbar">
+      <div class="container topbar-inner">
+        <a href="#" class="brand" data-nav="home">
+          <span class="brand-mark">🤲</span>
+          <span class="brand-name">Madad<span class="brand-dot">.</span></span>
+        </a>
+        <nav class="nav-links" id="nav-links">
+          <a href="#" data-nav="home">Home</a>
+          <a href="#" data-nav="explore">Explore</a>
+          <a href="#" data-nav="dashboard" class="auth-only hidden">Dashboard</a>
+          <a href="#" data-nav="admin" class="admin-only hidden">Admin</a>
+        </nav>
+        <div class="topbar-actions">
+          <a href="#" data-nav="dashboard" class="btn btn-primary btn-sm auth-only hidden" id="btn-new-campaign">+ Start Campaign</a>
+          <a href="#" data-nav="login" class="btn btn-ghost btn-sm guest-only" id="btn-login">Log in</a>
+          <a href="#" data-nav="register" class="btn btn-primary btn-sm guest-only" id="btn-register">Sign up</a>
+          <button class="btn btn-ghost btn-sm auth-only hidden" id="btn-logout">Log out</button>
+        </div>
+        <button class="hamburger" id="hamburger" aria-label="Menu"><span></span><span></span><span></span></button>
+      </div>
+    </header>
+
+    <!-- main view -->
+    <main id="view" class="container main-wrap"></main>
+
+    <!-- toast -->
+    <div id="toast" class="toast"></div>
+
+    <!-- donate modal -->
+    <div id="modal-root"></div>
+  </div>
+  <script src="/js/api.js"></script>
+  <script src="/js/ui.js"></script>
+  <script src="/js/views.js"></script>
+  <script src="/js/app.js"></script>
+</body>
+</html>
